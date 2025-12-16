@@ -9,7 +9,8 @@ import { ChatProvider } from '../context/ChatContext';
 // import { useChat } from '../hooks/UseChat';
 import { useChat } from '../context/ChatContext';
 
-import {ChatList} from '../Components/ChatList/ChatList'
+// import {ChatList} from '../Components/ChatList/ChatList'
+import { ChatList } from '../Components/ChatList/ChatList';
 
 
 // import ChatWindow from './components/ChatWindow/ChatWindow';
