@@ -1,0 +1,96 @@
+/* ================= MESSAGE WRAPPER ================= */
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+
+/* Own messages → right */
+.message-own {
+  justify-content: flex-end;
+}
+
+/* Other messages → left */
+.message-other {
+  justify-content: flex-start;
+}
+
+/* ================= MESSAGE BUBBLE ================= */
+.message-bubble {
+  max-width: 75%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Own bubble */
+.message-own .message-bubble {
+  background: #4f46e5;
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+}
+
+/* Other bubble */
+.message-other .message-bubble {
+  background: #f3f4f6;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+/* ================= SENDER NAME ================= */
+.message-sender-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* ================= CONTENT ================= */
+.message-content {
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+/* ================= FOOTER ================= */
+.message-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+/* ================= TIME ================= */
+.message-time {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* ================= STATUS ================= */
+.message-status {
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .message {
+    padding: 0 8px;
+  }
+
+  .message-bubble {
+    max-width: 85%;
+    padding: 7px 10px;
+  }
+
+  .message-content {
+    font-size: 13px;
+  }
+
+  .message-time {
+    font-size: 10px;
+  }
+}
