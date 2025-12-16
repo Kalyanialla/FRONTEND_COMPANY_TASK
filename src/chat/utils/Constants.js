@@ -1,10 +1,10 @@
 
 
 
-export const API_BASE_URL = 'http://127.0.0.1:8000';
-// export const API_BASE_URL='https://backend-company-task3.onrender.com'
-// export const WS_BASE_URL = 'wss://backend-company-task3.onrender.com';
-export const WS_BASE_URL = 'ws://127.0.0.1:8000';
+// export const API_BASE_URL = 'http://127.0.0.1:8000';
+export const API_BASE_URL='https://backend-company-task3.onrender.com'
+export const WS_BASE_URL = 'wss://backend-company-task3.onrender.com';
+// export const WS_BASE_URL = 'ws://127.0.0.1:8000';
 
 export const API_ENDPOINTS = {
   // Auth endpoints
