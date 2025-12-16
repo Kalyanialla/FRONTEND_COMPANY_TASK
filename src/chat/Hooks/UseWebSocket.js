@@ -4,6 +4,7 @@
 
 
 // final 
+
 import { useEffect, useRef, useState } from 'react';
 // import { useChat } from './UseChat';
 import { useChat } from './UseChat';
@@ -77,5 +78,5 @@ export const useWebSocket = (roomId) => {
     );
   };
 
-  return { isConnected, sendMessage, sendTyping, typing };
+  return { isConnected, sendMessage, sendTyping, typing }; // for show the status of user
 };
