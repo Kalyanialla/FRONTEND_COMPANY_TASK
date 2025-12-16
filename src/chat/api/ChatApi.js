@@ -1,7 +1,6 @@
 import axios from 'axios';
-// import { API_BASE_URL, API_ENDPOINTS } from '../utils/constants';
-// import { API_BASE_URL ,API_ENDPOINTS} from '../utils/Constants';
-import { API_BASE_URL,API_ENDPOINTS } from '../utils/constants';
+
+import { API_BASE_URL,API_ENDPOINTS } from '../utils/Constants';
 
 const chatApi = axios.create({
   baseURL: API_BASE_URL,

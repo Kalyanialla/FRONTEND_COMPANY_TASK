@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 // import { useChat } from './UseChat';
 import { useChat } from './UseChat';
 
-import { API_BASE_URL } from '../utils/Constants';
+import { API_BASE_URL, WS_BASE_URL } from '../utils/Constants';
 
 export const useWebSocket = (roomId) => {
   const socketRef = useRef(null);
@@ -21,7 +21,9 @@ export const useWebSocket = (roomId) => {
     if (!roomId) return;
 
     const token = localStorage.getItem('access_token');
-    const wsUrl = `ws://127.0.0.1:8000/websocket/chat/${roomId}/?token=${token}`;
+    // const wsUrl = `ws://127.0.0.1:8000/websocket/chat/${roomId}/?token=${token}`;
+    const wsUrl = `${WS_BASE_URL}/websocket/chat/${roomId}/?token=${token}`;
+
 
     socketRef.current = new WebSocket(wsUrl);
 

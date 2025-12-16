@@ -1,9 +1,10 @@
 
 
-
+ 
 
 import React, { useState } from 'react';
-import { useChat } from '../../Hooks/UseChat';
+// import { useChat } from '../../Hooks/UseChat';
+import { useChat } from '../../context/ChatContext';
 import './NewChatModal.css';
 
  export const NewChatModal = ({ onClose }) => {
