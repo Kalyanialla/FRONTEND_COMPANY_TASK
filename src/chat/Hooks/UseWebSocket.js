@@ -3,7 +3,7 @@
 
 
 
-// final 
+
 
 import { useEffect, useRef, useState } from 'react';
 // import { useChat } from './UseChat';
@@ -39,7 +39,7 @@ export const useWebSocket = (roomId) => {
       console.log('📩 WS message:', data);
 
        if (data.type === 'message') {
-        addMessage(data.message);   // 🔥 THIS WAS MISSING
+        addMessage(data.message);   
       }
 
       if (data.type === 'typing') {
